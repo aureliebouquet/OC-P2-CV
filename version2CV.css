@@ -1,0 +1,230 @@
+body
+{
+	font-family: Arial, 'Trebuchet MS'; sans-serif;
+	font-size: 20px;
+	color: #1A237E;
+}
+
+#CV_bloc
+{
+	width: 1180px;
+	margin: auto;
+	border: 2px solid #0288D1;
+}
+
+h1, aside h2, section h3, #bloc_droit section h2
+{
+	text-transform: uppercase;
+
+}
+
+h1, aside h2, section h3
+{
+	font-weight: lighter;
+}
+
+header
+{
+	display: flex;
+	flex-direction: row;
+	height: 327px;
+}
+
+#photo_profil
+{
+	width: 35%;
+	background-color: #0288D1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+img
+{
+	border: 3px solid;
+	border-color: rgba(59,89,153,0.8°);
+	border-radius: 50%; 
+	width: 217px;
+	height: 217px;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	vertical-align: middle;
+	margin-top: 20px;
+}
+
+#nom
+{
+	width: 65%;
+	padding-left: 46px;
+	padding-right: 45px;
+}
+
+h1
+{
+	font-size: 3em;
+	font-family: 'Trebuchet MS'; Arial, sans-serif;
+}
+
+.bleu
+{
+	color: #0288D1;
+}
+
+.surligne
+{
+	border-bottom: 4px solid #0288D1;
+}
+
+#info_CV
+{
+	display: flex;
+}
+
+#bloc_gauche
+{
+	width: 35%;
+	background-color: #0288D1;
+	display: flex;
+	flex-direction: column;
+}
+
+#bloc_gauche aside p
+{
+	margin-left: 45px;
+	margin-right: 49px;
+}
+
+#resume p
+{	
+	text-align: justify;
+}
+
+#resume
+{
+	flex-grow: 1;
+}
+
+aside h2
+{
+	color: #3b5999;
+	background-color: #FAFAFA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+}
+
+aside p, aside i
+{
+	color: #FAFAFA;
+}
+
+#icone_loisirs
+{
+	display: flex;
+	justify-content: space-around;
+	padding: 5px 40px 20px 40px;
+}	
+
+.loisirs
+{
+	text-align: center;
+  	vertical-align: middle;
+	font-size: 50px;
+	border: 2px solid #FAFAFA;
+	border-radius: 50%; 
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+}
+
+#bloc_droit
+{
+	width: 65%;
+	padding-top: 15px;
+	padding-left: 46px;
+	padding-right: 45px;
+}
+
+#bloc_droit section h2
+{
+	text-transform: uppercase;
+	border-bottom: 3px solid #3b5999;
+	padding-bottom: 10px;
+}
+
+.ligne
+{
+	display: flex;	
+}
+
+.l_gauche
+{
+	width: 460px;
+	font-size: 0.8em;
+	margin-right: 10px;
+}
+
+
+.l_droite p
+{ 
+	text-align: justify;
+}
+
+#referents
+{
+	display: flex;
+
+}
+
+.nom_referent
+{
+	margin-right: 100px;
+	padding-bottom: 20px;
+}
+
+#bloc_droit i
+{
+	margin-right: 40px;
+	color: #0288D1;
+}
+
+@media screen and (max-width: 1280px)
+{
+
+	#CV_bloc
+	{
+		width: auto;
+		flex-direction: column;
+	}
+
+	header
+	{
+		flex-direction: column;
+		width: auto;
+	}
+
+	#photo_profil, #nom
+	{
+		width: auto;
+		
+	}
+
+	#info_CV
+	{
+		width: auto;
+		flex-direction: column-reverse;
+	}
+
+	#bloc_gauche
+	{
+		width: auto;
+	}
+
+	#bloc_gauche
+	{
+		width: auto;
+	}
+
