@@ -1,140 +1,93 @@
 body
 {
-	font-family: Arial, 'Trebuchet MS'; sans-serif;
-	font-size: 20px;
-	color: #1A237E;
+	font-family: Arial, 'Trebuchet MS', sans-serif;
+	font-size: 18px;
+	color: #2F3131;
 }
 
 #CV_bloc
 {
-	width: 1180px;
+	width: 1100px;
+	display: flex;
 	margin: auto;
-	border: 2px solid #0288D1;
-}
-
-h1, aside h2, section h3, #bloc_droit section h2
-{
-	text-transform: uppercase;
-
-}
-
-h1, aside h2, section h3
-{
-	font-weight: lighter;
-}
-
-header
-{
-	display: flex;
-	flex-direction: row;
-	height: 327px;
-}
-
-#photo_profil
-{
-	width: 35%;
-	background-color: #0288D1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-}
-
-img
-{
-	border: 3px solid;
-	border-color: rgba(59,89,153,0.8°);
-	border-radius: 50%; 
-	width: 217px;
-	height: 217px;
-	object-fit: cover;
-	object-position: center;
-	position: absolute;
-	vertical-align: middle;
-	margin-top: 20px;
-}
-
-#nom
-{
-	width: 65%;
-	padding-left: 46px;
-	padding-right: 45px;
-}
-
-h1
-{
-	font-size: 3em;
-	font-family: 'Trebuchet MS'; Arial, sans-serif;
-}
-
-.bleu
-{
-	color: #0288D1;
-}
-
-.surligne
-{
-	border-bottom: 4px solid #0288D1;
-}
-
-#info_CV
-{
-	display: flex;
+	border: 2px solid #9A9EAB;
 }
 
 #bloc_gauche
 {
 	width: 35%;
-	background-color: #0288D1;
+	background-color: #5D535E;
 	display: flex;
 	flex-direction: column;
 }
 
-#bloc_gauche aside p
+#photo_profil
 {
-	margin-left: 45px;
-	margin-right: 49px;
+	height: 230px;
+	padding-top: 63px;
+	padding-left: 78px;
+	padding-right: 79px;
+	padding-bottom: 10px;
 }
 
-#resume p
-{	
-	text-align: justify;
+img
+{
+	border: 3px solid;
+	border-color: #9A9EAB;
+	border-radius: 50%;
+	width: 210px;
+	height: 210px;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	vertical-align: middle;
+}
+
+#bloc_gauche h3
+{
+	color: #5D535E;
+	background-color: #F0EFEA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	padding-top: 0px;
+}
+#bloc_gauche section p
+{
+	margin-top: 40px;
+	margin-left: 45px;
+	margin-right: 49px;
+	margin-bottom: 40px;
+}
+
+#bloc_gauche section p, #bloc_gauche section i
+{
+	color: #FAFAFA;
 }
 
 #resume
 {
 	flex-grow: 1;
 }
-
-aside h2
+#resume p
 {
-	color: #3b5999;
-	background-color: #FAFAFA;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 48px;
+	text-align: justify;
 }
-
-aside p, aside i
-{
-	color: #FAFAFA;
-}
-
 #icone_loisirs
 {
 	display: flex;
 	justify-content: space-around;
 	padding: 5px 40px 20px 40px;
-}	
+}
 
 .loisirs
 {
 	text-align: center;
-  	vertical-align: middle;
+	vertical-align: middle;
 	font-size: 50px;
 	border: 2px solid #FAFAFA;
-	border-radius: 50%; 
+	border-radius: 50%;
 	width: 70px;
 	height: 70px;
 	line-height: 70px;
@@ -142,56 +95,105 @@ aside p, aside i
 
 #bloc_droit
 {
-	width: 65%;
-	padding-top: 15px;
-	padding-left: 46px;
-	padding-right: 45px;
+	width: 60%;
+	padding-top: 2%;
+	margin-left: 4%;
+	margin-right: 5%;
+}
+
+.prenom_nom, #bloc_gauche h3, #bloc_droit h3, #bloc_droit section h2
+{
+	text-transform: uppercase;
+}
+
+.prenom_nom, #bloc_droit h3, h4, .bouquet
+{
+	font-weight: lighter;
+}
+
+header
+{
+	height: 240px;
+	padding-top: 9%;
+}
+
+.prenom_nom
+{
+	font-size: 3em;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+h1, .position
+{
+	margin: 6px;
+	padding: 0;
+}
+
+.couleur
+{
+	color: #FF420E;
+}
+
+.surligne
+{
+	border-bottom: 4px solid #FF420E;
 }
 
 #bloc_droit section h2
 {
 	text-transform: uppercase;
-	border-bottom: 3px solid #3b5999;
+	color: #2F3131;
+	border-bottom: 3px solid #9A9EAB;
 	padding-bottom: 10px;
 }
 
 .ligne
 {
-	display: flex;	
+	display: flex;
+	align-items: baseline;
 }
 
-.l_gauche
+.date
 {
-	width: 460px;
-	font-size: 0.8em;
-	margin-right: 10px;
+	font-size: 0.9em;
+	width: 20%;
+	margin-right: 2%;
 }
 
+.description
+{
+	width: 80%;
+}
 
-.l_droite p
-{ 
+.description p
+{
 	text-align: justify;
 }
 
 #referents
 {
 	display: flex;
-
 }
 
 .nom_referent
 {
-	margin-right: 100px;
-	padding-bottom: 20px;
+	width: 60%;
 }
 
-#bloc_droit i
+.ico
 {
 	margin-right: 40px;
-	color: #0288D1;
+	color: #9A9EAB;
 }
 
-@media screen and (max-width: 1280px)
+.puce_solide, .puce_transparente
+{
+	font-size: 0.5em;
+	color: #9A9EAB;
+	margin-right: 6px;
+}
+
+@media screen and (max-width: 991px)
 {
 
 	#CV_bloc
@@ -200,31 +202,38 @@ aside p, aside i
 		flex-direction: column;
 	}
 
+	#bloc_gauche
+	{
+		width: auto;
+	}
+
+	#details p
+	{
+		text-align: center;
+	}
+
+	#bloc_droit
+	{
+		width: auto;
+	}
+
+	#bloc_droit h2
+	{
+		font-size: 1em;
+	}
+
 	header
 	{
-		flex-direction: column;
 		width: auto;
+		text-align: center;
 	}
 
-	#photo_profil, #nom
+	#photo_profil
 	{
 		width: auto;
-		
-	}
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-	#info_CV
-	{
-		width: auto;
-		flex-direction: column-reverse;
 	}
-
-	#bloc_gauche
-	{
-		width: auto;
-	}
-
-	#bloc_gauche
-	{
-		width: auto;
-	}
-
+}
