@@ -24,10 +24,11 @@ body
 #photo_profil
 {
 	height: 230px;
-	padding-top: 63px;
-	padding-left: 78px;
-	padding-right: 79px;
-	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+	margin-bottom: 4%;
 }
 
 img
@@ -51,14 +52,12 @@ img
 	justify-content: center;
 	align-items: center;
 	height: 48px;
-	padding-top: 0px;
 }
+
 #bloc_gauche section p
 {
-	margin-top: 40px;
-	margin-left: 45px;
-	margin-right: 49px;
-	margin-bottom: 40px;
+	margin: 40px 49px 38px 45px;
+
 }
 
 #bloc_gauche section p, #bloc_gauche section i
@@ -74,6 +73,7 @@ img
 {
 	text-align: justify;
 }
+
 #icone_loisirs
 {
 	display: flex;
@@ -106,7 +106,7 @@ img
 	text-transform: uppercase;
 }
 
-.prenom_nom, #bloc_droit h3, h4, .bouquet
+.prenom_nom, #bloc_droit h3, h4
 {
 	font-weight: lighter;
 }
@@ -236,4 +236,24 @@ h1, .position
 		align-items: center;
 
 	}
+	@media screen and (max-width: 700px)
+
+	{
+		#referents
+		{
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+		}
+
+		.nom_referent
+		{
+			width: auto;
+		}
+	}
+		h1
+		{
+			font-size: 1.5em;
+			color: #2F3131;
+		}
 }
