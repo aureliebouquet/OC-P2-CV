@@ -309,9 +309,10 @@ img
 @media screen and (max-width: 700px)
 
 {
-	header
+
+	#bloc_droit h3
 	{
-		min-height: 25em;
+		font-size: 1em;
 	}
 
 	#referents
