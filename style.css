@@ -22,9 +22,9 @@ body
 	font-weight: lighter;
 }
 
-.position,
+.position
 {
-	font-size: 1.5em,
+	font-size: 1.5em;
 }
 
 header
@@ -37,11 +37,6 @@ header
 h1
 {
 	color: #353C3F;
-}
-
-.prenom_nom
-{
-	font-size: 2em
 }
 
 h1, .position
@@ -71,7 +66,6 @@ img
 	position: absolute;
 	vertical-align: middle;
 	margin-top: 1%;
-
 }
 
 #nom
@@ -322,8 +316,14 @@ img
 
 	#referents
 	{
-		display: flex;
 		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.nom_referent
+	{
+		width: auto;
 	}
 
 	h1
