@@ -8,27 +8,50 @@ body
 #CV_bloc
 {
 	width: 1100px;
-	display: flex;
 	margin: auto;
 	border: 2px solid #9A9EAB;
 }
 
-#bloc_gauche
+.prenom_nom, #bloc_gauche h3, #bloc_droit h3, #bloc_droit section h2
 {
-	width: 35%;
-	background-color: #5D535E;
+	text-transform: uppercase;
+}
+
+.prenom_nom, #bloc_droit h3, h4
+{
+	font-weight: lighter;
+}
+
+.position
+{
+	font-size: 1.5em;
+}
+
+header
+{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	height: 300px;
+}
+
+h1
+{
+	color: #353C3F;
+}
+
+h1, .position
+{
+	margin: 6px;
+	padding: 0;
 }
 
 #photo_profil
 {
-	height: 230px;
+	width: 35%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 10%;
-	margin-bottom: 4%;
+	background-color: #5D535E;
 }
 
 img
@@ -42,6 +65,61 @@ img
 	object-position: center;
 	position: absolute;
 	vertical-align: middle;
+	margin-top: 1%;
+}
+
+#nom
+{
+	width: 65%;
+	margin-left: 4%;
+	padding-top: 7%;
+}
+
+.prenom_nom
+{
+	font-size: 3em;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.couleur
+{
+	color: #FF420E;
+}
+
+.surligne
+{
+	border-bottom: 4px solid #FF420E;
+}
+
+#info_CV
+{
+	display: flex;
+}
+
+#bloc_gauche
+{
+	width: 35%;
+	background-color: #5D535E;
+	display: flex;
+	flex-direction: column;
+}
+
+#bloc_gauche section p
+{
+	margin-top: 40px;
+	margin-left: 45px;
+	margin-right: 49px;
+	margin-bottom: 40px;
+}
+
+#resume p
+{
+	text-align: justify;
+}
+
+#resume
+{
+	flex-grow: 1;
 }
 
 #bloc_gauche h3
@@ -52,12 +130,13 @@ img
 	justify-content: center;
 	align-items: center;
 	height: 48px;
+	padding-top: 0px;
 }
 
-#bloc_gauche section p
+#bloc_gauche, h3
 {
-	margin: 40px 49px 38px 45px;
-
+	margin: 0;
+	padding: 0;
 }
 
 #bloc_gauche section p, #bloc_gauche section i
@@ -65,20 +144,11 @@ img
 	color: #FAFAFA;
 }
 
-#resume
-{
-	flex-grow: 1;
-}
-#resume p
-{
-	text-align: justify;
-}
-
 #icone_loisirs
 {
 	display: flex;
 	justify-content: space-around;
-	padding: 5px 40px 20px 40px;
+	padding: 15px 40px 20px 40px;
 }
 
 .loisirs
@@ -99,44 +169,7 @@ img
 	padding-top: 2%;
 	margin-left: 4%;
 	margin-right: 5%;
-}
 
-.prenom_nom, #bloc_gauche h3, #bloc_droit h3, #bloc_droit section h2
-{
-	text-transform: uppercase;
-}
-
-.prenom_nom, #bloc_droit h3, h4
-{
-	font-weight: lighter;
-}
-
-header
-{
-	height: 240px;
-	padding-top: 9%;
-}
-
-.prenom_nom
-{
-	font-size: 3em;
-	font-family: 'Trebuchet MS', Arial, sans-serif;
-}
-
-h1, .position
-{
-	margin: 6px;
-	padding: 0;
-}
-
-.couleur
-{
-	color: #FF420E;
-}
-
-.surligne
-{
-	border-bottom: 4px solid #FF420E;
 }
 
 #bloc_droit section h2
@@ -170,6 +203,8 @@ h1, .position
 	text-align: justify;
 }
 
+
+
 #referents
 {
 	display: flex;
@@ -193,10 +228,47 @@ h1, .position
 	margin-right: 6px;
 }
 
+
 @media screen and (max-width: 991px)
 {
 
 	#CV_bloc
+	{
+		width: auto;
+	}
+
+	header
+	{
+		flex-direction: column;
+		width: auto;
+		height: 25em;
+		background-color: #5D535E;
+		padding-bottom: 5%;
+	}
+
+	h1
+	{
+		font-size: 2em;
+		color: #F0EFEA;
+	}
+
+	#photo_profil
+	{
+		width: auto;
+		height: 60%;
+		padding-bottom: 1.2em;
+		padding-top: 2%;
+		background-color: transparent;
+	}
+
+	#nom
+	{
+		width: auto;
+		text-align: center;
+		padding-top: 2%;
+	}
+
+	#info_CV
 	{
 		width: auto;
 		flex-direction: column;
@@ -221,39 +293,44 @@ h1, .position
 	{
 		font-size: 1em;
 	}
-
-	header
+	#details, h3
 	{
-		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	#icone_loisirs
+	{
+		padding-top: 3%;
+	}
+
+}
+
+@media screen and (max-width: 700px)
+
+{
+
+	#bloc_droit h3
+	{
+		font-size: 1em;
+	}
+
+	#referents
+	{
+		flex-direction: column;
 		text-align: center;
+		justify-content: center;
 	}
 
-	#photo_profil
+	.nom_referent
 	{
 		width: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
 	}
-	@media screen and (max-width: 700px)
 
+	h1
 	{
-		#referents
-		{
-			flex-direction: column;
-			text-align: center;
-			justify-content: center;
-		}
-
-		.nom_referent
-		{
-			width: auto;
-		}
+		font-size: 1.5em;
+		color: #F0EFEA;
 	}
-		h1
-		{
-			font-size: 1.5em;
-			color: #2F3131;
-		}
+
 }
