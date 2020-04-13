@@ -44,6 +44,12 @@ h1, .position
 	margin: 6px;
 	padding: 0;
 }
+figure {
+	margin-block-start: 0;
+	margin-block-end:  0;
+	margin-inline-start:  0;
+	margin-inline-end:  0;
+}
 
 #photo_profil
 {
@@ -202,8 +208,6 @@ img
 {
 	text-align: justify;
 }
-
-
 
 #referents
 {
