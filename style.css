@@ -212,11 +212,13 @@ img
 #referents
 {
 	display: flex;
+	margin-bottom: 4%;
 }
 
 .nom_referent
 {
 	width: 60%;
+	font-style: normal;
 }
 
 .ico
