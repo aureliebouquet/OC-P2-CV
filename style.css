@@ -1,5 +1,4 @@
-body
-{
+body {
 	font-family: Arial, 'Trebuchet MS', sans-serif;
 	font-size: 18px;
 	color: #2F3131;
@@ -7,6 +6,7 @@ body
 	margin: auto;
 	border: 2px solid #9A9EAB;
 }
+
 
 .prenom_nom,
 #bloc_gauche h3,
@@ -21,28 +21,49 @@ h4 {
 	font-weight: lighter;
 }
 
-.position
-{
-	font-size: 1.5em;
-}
+/******HEADER*****/
 
-header
-{
+header {
 	display: flex;
 	flex-direction: row-reverse;
 	height: 300px;
 }
 
-h1
-{
+/******HEADER-partie droite*****/
+
+header section {
+	width: 62%;
+	padding-top: 7%;
+	margin-left: 4%;
+}
+
+h1 {
 	color: #353C3F;
 }
 
-h1, .position
-{
+.position {
+	font-size: 1.5em;
+}
+
+h1, .position {
 	margin: 6px;
 	padding: 0;
 }
+
+.prenom_nom {
+	font-size: 3em;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.couleur {
+	color: #FF420E;
+}
+
+.surligne {
+	border-bottom: 4px solid #FF420E;
+}
+
+/******HEADER-partie gauche*****/
 
 figure {
 	margin-block-start: 0;
@@ -56,8 +77,7 @@ figure {
 	background-color: #5D535E;
 }
 
-img
-{
+img {
 	border: 3px solid;
 	border-color: #9A9EAB;
 	border-radius: 50%;
@@ -70,37 +90,18 @@ img
 	margin-top: 1%;
 }
 
-header section
-{
-	width: 62%;
-	padding-top: 7%;
-	margin-left: 4%;
-}
+/******Informations personnelles + CV détaillé *****/
 
-.prenom_nom
-{
-	font-size: 3em;
-	font-family: 'Trebuchet MS', Arial, sans-serif;
-}
+/******mise en page div="info_CV******/
 
-.couleur
-{
-	color: #FF420E;
-}
-
-.surligne
-{
-	border-bottom: 4px solid #FF420E;
-}
-
-#info_CV
-{
+#info_CV {
 	display: flex;
 	flex-direction: row-reverse;
 }
 
-#bloc_gauche
-{
+/******Info_CV-Bloc_Gauche******/
+
+#bloc_gauche {
 	width: 34%;
 	background-color: #5D535E;
 	display: flex;
@@ -116,26 +117,22 @@ header section
 	font-style: normal;
 }
 
-#bloc_gauche section p
-{
+#bloc_gauche section p {
 	margin-top: 40px;
 	margin-left: 45px;
 	margin-right: 49px;
 	margin-bottom: 40px;
 }
 
-#resume p
-{
-	text-align: justify;
-}
-
-#resume
-{
+#resume {
 	flex-grow: 1;
 }
 
-#bloc_gauche h3
-{
+#resume p {
+	text-align: justify;
+}
+
+#bloc_gauche h3 {
 	color: #5D535E;
 	background-color: #F0EFEA;
 	display: flex;
@@ -145,26 +142,24 @@ header section
 	padding-top: 0px;
 }
 
-#bloc_gauche, h3
-{
+#bloc_gauche, h3 {
 	margin: 0;
 	padding: 0;
 }
 
-#bloc_gauche section p, #bloc_gauche section i, #bloc_gauche address
-{
+#bloc_gauche section p,
+#bloc_gauche section i,
+#bloc_gauche address {
 	color: #FAFAFA;
 }
 
-#icone_loisirs
-{
+#loisirs {
 	display: flex;
 	justify-content: space-around;
 	padding: 15px 40px 20px 40px;
 }
 
-.loisirs
-{
+.icone_loisirs {
 	text-align: center;
 	vertical-align: middle;
 	font-size: 50px;
@@ -175,85 +170,80 @@ header section
 	line-height: 70px;
 }
 
-main
-{
+/******Info_CV-Bloc_Droit******/
+
+main {
 	width: 57%;
 	padding-top: 2%;
 	margin-right: 5%;
 	margin-left: 4%;
-
 }
 
-main section h2
-{
+main section h2 {
 	text-transform: uppercase;
 	color: #2F3131;
 	border-bottom: 3px solid #9A9EAB;
 	padding-bottom: 10px;
 }
 
-ul{
-	padding-inline-start: 0;
-}
-.ligne
-{
-	display: flex;
-	align-items: baseline;
-}
-
-.date
-{
-	font-size: 0.9em;
-	width: 20%;
-	margin-right: 2%;
-}
-
-.description
-{
-	width: 80%;
-}
-
-.description p
-{
-	text-align: justify;
-}
-
-#referents
-{
-	display: flex;
-	margin-bottom: 4%;
-}
-
-.nom_referent
-{
-	width: 60%;
-	font-style: normal;
-}
-
-.ico
-{
+.ico {
 	margin-right: 40px;
 	color: #9A9EAB;
 }
 
-.puce_solide, .puce_transparente
-{
+.puce_solide, .puce_transparente {
 	font-size: 0.5em;
 	color: #9A9EAB;
 	margin-right: 6px;
 }
 
+/******Info_CV-Bloc_Droit-Sections FORMATIONS ET EXPERIENCE******/
+
+ul{
+	padding-inline-start: 0;
+}
+
+.ligne {
+	display: flex;
+	align-items: baseline;
+}
+
+.date {
+	font-size: 0.9em;
+	width: 20%;
+	margin-right: 2%;
+}
+
+.description {
+	width: 80%;
+}
+
+.description p {
+	text-align: justify;
+}
+
+/******Info CV-Bloc_Droit- Section recommandations******/
+#referents {
+	display: flex;
+	margin-bottom: 4%;
+}
+
+.nom_referent {
+	width: 60%;
+	font-style: normal;
+}
+
+
+/****** Partie responsive- Media queries******/
 
 @media screen and (max-width: 991px)
 {
 
-	#CV_bloc
-	{
+	body{
 		width: auto;
 	}
 
-	header
-	{
+	header {
 		flex-direction: column-reverse;
 		width: auto;
 		height: 25em;
@@ -261,14 +251,12 @@ ul{
 		padding-bottom: 5%;
 	}
 
-	h1
-	{
+	h1 {
 		font-size: 2em;
 		color: #F0EFEA;
 	}
 
-	figure
-	{
+	figure {
 		width: auto;
 		height: 60%;
 		padding-bottom: 1.2em;
@@ -276,47 +264,45 @@ ul{
 		background-color: transparent;
 	}
 
-	#nom
-	{
+	#nom {
 		width: auto;
 		text-align: center;
 		padding-top: 2%;
 	}
 
-	#info_CV
-	{
+	#info_CV {
 		width: auto;
 		flex-direction: column;
 	}
 
-	#bloc_gauche
-	{
+	#bloc_gauche {
 		width: auto;
 	}
 
-	#details p
-	{
+	#details p {
 		text-align: center;
 	}
 
-	main
-	{
+	main {
 		width: auto;
 	}
 
-	main h2
-	{
+	main h2 {
 		font-size: 1em;
 	}
-	#details, h3
-	{
+
+	#details,
+	h3 {
 		margin: 0;
 		padding: 0;
 	}
 
-	#icone_loisirs
-	{
+	#icone_loisirs {
 		padding-top: 3%;
+	}
+
+	#details address {
+		text-align: center;
 	}
 
 }
@@ -324,70 +310,57 @@ ul{
 @media screen and (max-width: 700px)
 
 {
+	h1 {
+		font-size: 1.5em;
+		color: #F0EFEA;
+	}
 
-	main h3
-	{
+	main h2 {
+		text-align: center;
+	}
+
+	main h3 {
 		font-size: 1em;
 	}
 
-	#referents
-	{
+	li {
+		flex-direction: column;
+		width: auto;
+	}
+
+	.description p{
+		text-align: justify;
+	}
+
+	.date, .description {
+		width: 100%;
+	}
+
+	.date,
+	.description h3,
+	.description h4 {
+		align-items: center;
+		text-align: center;
+	}
+
+	#referents {
 		flex-direction: column;
 		text-align: center;
 		justify-content: center;
 	}
-	.nom_referent
-	{
-		margin-bottom: 20px;
-	}
 
-	.description p
-	{
-		text-align: justify;
-	}
-	.date, .description
-	{
-		width: 100%;
-	}
-	.date, .description h3, .description h4
-	{
-		align-items: center;
-		text-align: center;
-	}
-	.nom_referent
-	{
+	.nom_referent {
+		margin-bottom: 20px;
 		width: auto;
 	}
+
 	.ligne .puce_solide,
-	.ligne .puce_transparente
-	{
+	.ligne .puce_transparente {
 		display: none;
 	}
 
-	h1
-	{
-		font-size: 1.5em;
-		color: #F0EFEA;
-	}
-	 main h2
-	 {
-		 text-align: center;
-	 }
-
-	li{
-		flex-direction: column;
-		width: auto;
-	}
-
-	address
-	{
+	#details address {
 		text-align: center;
 	}
-
-
-
-
-
-
 
 }
