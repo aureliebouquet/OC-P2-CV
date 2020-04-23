@@ -297,7 +297,7 @@ ul{
 		padding: 0;
 	}
 
-	#icone_loisirs {
+	#loisirs i {
 		padding-top: 3%;
 	}
 
@@ -330,7 +330,11 @@ ul{
 	.description p{
 		text-align: justify;
 	}
-
+	.date
+	{
+		font-weight: bold;
+		color: #FF420E;
+	}
 	.date, .description {
 		width: 100%;
 	}
@@ -341,7 +345,10 @@ ul{
 		align-items: center;
 		text-align: center;
 	}
-
+	h3, h4 {
+		margin: 0;
+		padding: 0;
+	}
 	#referents {
 		flex-direction: column;
 		text-align: center;
@@ -356,6 +363,13 @@ ul{
 	.ligne .puce_solide,
 	.ligne .puce_transparente {
 		display: none;
+	}
+	.ligne{
+		margin-bottom: 18px;
+	}
+
+	ul{
+		margin-bottom: 40px;
 	}
 
 }
