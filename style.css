@@ -223,6 +223,7 @@ ul{
 }
 
 /******Info CV-Bloc_Droit- Section recommandations******/
+
 #referents {
 	display: flex;
 	margin-bottom: 4%;
@@ -233,12 +234,11 @@ ul{
 	font-style: normal;
 }
 
-
 /****** Partie responsive- Media queries******/
 
 @media screen and (max-width: 991px)
-{
 
+{
 	body{
 		width: auto;
 	}
@@ -304,10 +304,9 @@ ul{
 	#details address {
 		text-align: center;
 	}
-
 }
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 575px)
 
 {
 	h1 {
@@ -359,8 +358,5 @@ ul{
 		display: none;
 	}
 
-	#details address {
-		text-align: center;
-	}
-
 }
+
