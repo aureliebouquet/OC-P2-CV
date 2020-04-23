@@ -181,7 +181,7 @@ header section
 
 main
 {
-	width: 60%;
+	width: 57%;
 	padding-top: 2%;
 	margin-right: 5%;
 	margin-left: 4%;
@@ -196,6 +196,9 @@ main section h2
 	padding-bottom: 10px;
 }
 
+ul{
+	padding-inline-start: 0;
+}
 .ligne
 {
 	display: flex;
@@ -337,10 +340,32 @@ main section h2
 		text-align: center;
 		justify-content: center;
 	}
+	.nom_referent
+	{
+		margin-bottom: 20px;
+	}
 
+	.description p
+	{
+		text-align: justify;
+	}
+	.date, .description
+	{
+		width: 100%;
+	}
+	.date, .description h3, .description h4
+	{
+		align-items: center;
+		text-align: center;
+	}
 	.nom_referent
 	{
 		width: auto;
+	}
+	.ligne .puce_solide,
+	.ligne .puce_transparente
+	{
+		display: none;
 	}
 
 	h1
@@ -348,5 +373,25 @@ main section h2
 		font-size: 1.5em;
 		color: #F0EFEA;
 	}
+	 main h2
+	 {
+		 text-align: center;
+	 }
+
+	li{
+		flex-direction: column;
+		width: auto;
+	}
+
+	address
+	{
+		text-align: center;
+	}
+
+
+
+
+
+
 
 }
