@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8"/>
 	<title>CV Aurélie Bouquet</title>
@@ -10,137 +10,137 @@
 
 <body>
 
-	<header> <!-- header : Photo + Titre + Nom -->
+<header> <!-- header : Photo + Titre + Nom -->
 
-		<section id="nom"> <!-- Titre + Nom- partie droite-->
-			<h1 class="prenom_nom" ><span class="couleur">aurélie</span> bouquet</h1>
-			<h1 class="position"><span class="surligne">Devél</span>oppeuse web freelance</h1>
+	<section id="nom"> <!-- Titre + Nom- partie droite-->
+		<h1 class="prenom_nom" ><span class="couleur">aurélie</span> bouquet</h1>
+		<h1 class="position"><span class="surligne">Devél</span>oppeuse web freelance</h1>
+	</section>
+
+	<figure> <!-- Photo de profil-partie gauche-->
+		<img src="./photo_profil.jpg"  alt="Photo CV"/>
+	</figure>
+
+</header>
+
+<div id="info_CV"> <!-- Info personnelles + Info CV -->
+
+	<main> <!-- bloc droit-->
+
+		<section> <!-- bloc droit FORMATION-->
+			<h2><i class="fas fa-graduation-cap ico"></i>formation</h2>
+			<ul>
+				<li class="ligne">
+					<i class="far fa-dot-circle puce_transparente"></i>
+					<p class="date">2020-Aujourd'hui<br>Paris</p>
+					<div class="description">
+						<h3>Junior Web Developer</h3>
+						<h4>Openclassrooms</h4>
+						<p>
+							Formation à distance en ligne.
+							Découverte et maîtrise des languages HTML et CSS.
+							Découverte et utilisation de l'outil de versioning Git et Github.
+						</p>
+					</div>
+				</li>
+
+				<li class="ligne">
+					<i class="fas fa-circle puce_solide"></i>
+					<p class="date">2007-2012<br>Toulouse</p>
+					<div class="description">
+						<h3>Docteur Vétérinaire</h3>
+						<h4>École Nationale Vétérinaire de Newland</h4>
+						<p>Formation théorique et pratique en médecine et chirurgie des dragons. Spécialisation en médecine interne des dragons européens.</p>
+					</div>
+				</li>
+			</ul>
+		</section> <!-- fin bloc droit FORMATION-->
+
+		<section> <!-- bloc droit EXPERIENCE-->
+			<h2><i class="fas fa-briefcase ico"></i>expérience professionelle</h2>
+			<ul>
+				<li class="ligne">
+					<i class="far fa-dot-circle puce_transparente"></i>
+					<p class="date">Fév.2017-Poste actuel<br>UK</p>
+					<div class="description">
+						<h3>Vétérinaire Dragons de Compagnie</h3>
+						<h4>Centre Hospitalier Vétérinaire</h4>
+						<p>Consultations générales, médecine et chirurgies des dragons occidentaux.</p>
+					</div>
+				</li>
+
+				<li class="ligne">
+					<i class="fas fa-circle puce_solide"></i>
+					<p class="date">Déc 2012- Déc 2016<br>Paris</p>
+					<div class="description">
+						<h3>Vétérinaire Dragons de Compagnie</h3>
+						<h4>Centre Hospitalier Vétérinaire</h4>
+						<p>Consultations générales, médecine et chirurgies des dragons occidentaux et des nouveaux dragons asiatiques de compagnie.</p>
+					</div>
+				</li>
+
+				<li class="ligne">
+					<i class="fas fa-circle puce_solide"></i>
+					<p class="date">Fév-Juin 2012<br>Paris</p>
+					<div class="description">
+						<h3>Vétérinaire de garde</h3>
+						<h4>Clinique Vétérinaire</h4>
+						<p>Consultations d'urgences, gestion des dragons hospitalisés.</p>
+					</div>
+				</li>
+			</ul>
+		</section> <!-- fin bloc droit EXPERIENCE-->
+
+		<section> <!-- bloc droit RECOMMANDATIONS-->
+			<h2><i class="fas fa-pencil-alt ico"></i>recommandations</h2>
+			<div id="referents">
+				<address class="nom_referent">
+					Sue Magic<br>
+					Directeur, Veterinary clinic<br>
+					06 00 00 00 00<br>
+					Email:sue.magic@fake.com
+				</address>
+
+				<address class="nom_referent">
+					Helen Disney<br>
+					Web developer<br>
+					06 00 00 00 00<br>
+					mail:helen.disney@fake.com
+				</address>
+			</div>
+		</section> <!-- fin bloc droit RECOMMANDATIONS-->
+
+	</main><!-- fin de section bloc droit-->
+
+	<div id="bloc_gauche"> <!-- bloc gauche-->
+		<section id="details">
+			<h3>contact</h3>
+			<address>Wonderful Island<br>Worthing, United-Kingdom<br><br>
+				Téléphone<br>06 12 34 56 78<br><br>
+				Email<br>super.fury@fake.com<br><br>
+				Site web<br>https://github.com/aureliebouquet<br><br>
+				Skype<br>@superfury</address>
 		</section>
 
-		<figure> <!-- Photo de profil-partie gauche-->
-			<img src="./photo_profil.jpg"  alt="Photo CV"/>
-		</figure>
 
-	</header>
+		<section id="resume">
+			<h3>à propos de moi</h3>
+			<p> Vétérinaire de formation, passionée par les nouvelles technologies et toujours l'envie d'apprendre, je souhaite aujourd'hui me tourner vers l'univers du web.
+			</p>
+		</section>
 
-	<div id="info_CV"> <!-- Info personnelles + Info CV -->
+		<section>
+			<h3>loisirs</h3>
+			<div id="loisirs">
+				<div class="icone_loisirs"><i class="fas fa-skiing"></i></div>
+				<div class="icone_loisirs"><i class="fas fa-swimmer"></i></div>
+				<div class="icone_loisirs"><i class="fas fa-headphones"></i></div>
+			</div>
+		</section>
 
-		<main> <!-- bloc droit-->
+	</div> <!-- fin de section bloc gauche-->
 
-			<section> <!-- bloc droit FORMATION-->
-				<h2><i class="fas fa-graduation-cap ico"></i>formation</h2>
-				<ul>
-					<li class="ligne">
-						<i class="far fa-dot-circle puce_transparente"></i>
-						<p class="date">2020-Aujourd'hui</br>Paris</p>
-						<div class="description">
-							<h3>Junior Web Developer</h3>
-							<h4>Openclassrooms</h4>
-							<p>
-								Formation à distance en ligne.
-								Découverte et maîtrise des languages HTML et CSS.
-								Découverte et utilisation de l'outil de versioning Git et Github.
-							</p>
-						 </div>
-					</li>
-
-					<li class="ligne">
-						<i class="fas fa-circle puce_solide"></i>
-						<p class="date">2007-2012</br>Toulouse</p>
-						<div class="description">
-							<h3>Docteur Vétérinaire</h3>
-							<h4>École Nationale Vétérinaire de Newland</h4>
-							<p>Formation théorique et pratique en médecine et chirurgie des dragons. Spécialisation en médecine interne des dragons européens.</p>
-						</div>
-					</li>
-				</ul>
-			</section> <!-- fin bloc droit FORMATION-->
-
-			<section> <!-- bloc droit EXPERIENCE-->
-				<h2><i class="fas fa-briefcase ico"></i>expérience professionelle</h2>
-				<ul>
-					<li class="ligne">
-						<i class="far fa-dot-circle puce_transparente"></i>
-						<p class="date">Fév.2017-Poste actuel</br>UK</p>
-						<div class="description">
-							<h3>Vétérinaire Dragons de Compagnie</h3>
-							<h4>Centre Hospitalier Vétérinaire</h4>
-							<p>Consultations générales, médecine et chirurgies des dragons occidentaux.</p>
-						</div>
-					</li>
-
-					<li class="ligne">
-						<i class="fas fa-circle puce_solide"></i>
-						<p class="date">Déc 2012- Déc 2016</br>Paris</p>
-						<div class="description">
-							<h3>Vétérinaire Dragons de Compagnie</h3>
-							<h4>Centre Hospitalier Vétérinaire</h4>
-							<p>Consultations générales, médecine et chirurgies des dragons occidentaux et des nouveaux dragons asiatiques de compagnie.</p>
-						</div>
-					</li>
-
-					<li class="ligne">
-						<i class="fas fa-circle puce_solide"></i>
-						<p class="date">Fév-Juin 2012</br>Paris</p>
-						<div class="description">
-							<h3>Vétérinaire de garde</h3>
-							<h4>Clinique Vétérinaire</h4>
-							<p>Consultations d'urgences, gestion des dragons hospitalisés.</p>
-						</div>
-					</li>
-				</ul>
-			</section> <!-- fin bloc droit EXPERIENCE-->
-
-			<section> <!-- bloc droit RECOMMANDATIONS-->
-				<h2><i class="fas fa-pencil-alt ico"></i>recommandations</h2>
-				<div id="referents">
-					<address class="nom_referent">
-						Sue Magic</br>
-						Directeur, Veterinary clinic</br>
-						06 00 00 00 00</br>
-						Email:sue.magic@fake.com
-					</address>
-
-					<address class="nom_referent">
-						Helen Disney</br>
-						Web developer</br>
-						06 00 00 00 00</br>
-						mail:helen.disney@fake.com
-					</address>
-				</div>
-			</section> <!-- fin bloc droit RECOMMANDATIONS-->
-
-		</main><!-- fin de section bloc droit-->
-
-		<div id="bloc_gauche"> <!-- bloc gauche-->
-			<section id="details">
-				<h3>contact</h3>
-				<address>Wonderful Island</br>Worthing, United-Kingdom</br></br>
-					Téléphone</br>06 12 34 56 78</br></br>
-					Email</br>super.fury@fake.com</br></br>
-					Site web</br>https://github.com/aureliebouquet</br></br>
-					Skype</br>@superfury</address>
-			</section>
-
-
-			<section id="resume">
-				<h3>à propos de moi</h3>
-				<p> Vétérinaire de formation, passionée par les nouvelles technologies et toujours l'envie d'apprendre, je souhaite aujourd'hui me tourner vers l'univers du web.
-				</p>
-			</section>
-
-			<section>
-				<h3>loisirs</h3>
-				<div id="loisirs">
-					<div class="icone_loisirs"><i class="fas fa-skiing"></i></div>
-					<div class="icone_loisirs"><i class="fas fa-swimmer"></i></div>
-					<div class="icone_loisirs"><i class="fas fa-headphones"></i></div>
-				</div>
-			</section>
-
-		</div> <!-- fin de section bloc gauche-->
-
-	</div> <!-- Info personnelles + Info CV -->
+</div> <!-- Info personnelles + Info CV -->
 
 </body>
 
